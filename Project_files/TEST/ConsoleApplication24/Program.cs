@@ -40,7 +40,7 @@ namespace ConsoleApplication24
         {
 
         }
-        void Hi()
+        void Hii()
         {
             Console.WriteLine("Hi to All.I am Larisa");
         }
