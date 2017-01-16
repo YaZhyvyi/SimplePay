@@ -1,1 +1,1 @@
-Clients (UI) goes here.
+Clients (UI) go here.
