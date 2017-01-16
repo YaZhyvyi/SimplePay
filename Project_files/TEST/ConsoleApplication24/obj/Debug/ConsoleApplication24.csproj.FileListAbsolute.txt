@@ -1,7 +1,0 @@
-c:\users\alive\documents\visual studio 2015\Projects\ConsoleApplication24\ConsoleApplication24\bin\Debug\ConsoleApplication24.exe.config
-C:\Users\Alive\Desktop\SimplePay Admins Folder\Project_files\TEST\ConsoleApplication24\bin\Debug\ConsoleApplication24.exe.config
-C:\Users\Alive\Desktop\SimplePay Admins Folder\Project_files\TEST\ConsoleApplication24\bin\Debug\ConsoleApplication24.exe
-C:\Users\Alive\Desktop\SimplePay Admins Folder\Project_files\TEST\ConsoleApplication24\bin\Debug\ConsoleApplication24.pdb
-C:\Users\Alive\Desktop\SimplePay Admins Folder\Project_files\TEST\ConsoleApplication24\obj\Debug\ConsoleApplication24.csprojResolveAssemblyReference.cache
-C:\Users\Alive\Desktop\SimplePay Admins Folder\Project_files\TEST\ConsoleApplication24\obj\Debug\ConsoleApplication24.exe
-C:\Users\Alive\Desktop\SimplePay Admins Folder\Project_files\TEST\ConsoleApplication24\obj\Debug\ConsoleApplication24.pdb
