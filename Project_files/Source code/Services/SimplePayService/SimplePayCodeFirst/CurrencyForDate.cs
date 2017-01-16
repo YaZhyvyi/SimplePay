@@ -12,7 +12,6 @@ namespace SimplePayCodeFirst
         public double Multiplier { get; set; }
 
         public virtual Currency Currency { get; set; }
-        public int CurrencyID { get; set; }
 
 
     }
