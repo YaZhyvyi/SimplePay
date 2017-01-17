@@ -28,42 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvPH = new System.Windows.Forms.DataGridView();
+            this.pnlPager = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPH)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvPH
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(546, 350);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvPH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPH.Location = new System.Drawing.Point(24, 24);
+            this.dgvPH.Name = "dgvPH";
+            this.dgvPH.Size = new System.Drawing.Size(546, 350);
+            this.dgvPH.TabIndex = 0;
             // 
-            // panel1
+            // pnlPager
             // 
-            this.panel1.Location = new System.Drawing.Point(24, 380);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(546, 26);
-            this.panel1.TabIndex = 1;
+            this.pnlPager.Location = new System.Drawing.Point(24, 380);
+            this.pnlPager.Name = "pnlPager";
+            this.pnlPager.Size = new System.Drawing.Size(546, 26);
+            this.pnlPager.TabIndex = 1;
             // 
             // PaymentHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pnlPager);
+            this.Controls.Add(this.dgvPH);
             this.Name = "PaymentHistory";
             this.Size = new System.Drawing.Size(593, 409);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.PaymentHistory_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPH)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvPH;
+        private System.Windows.Forms.Panel pnlPager;
     }
 }
