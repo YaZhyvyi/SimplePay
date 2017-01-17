@@ -61,6 +61,12 @@
     <Compile Include="Registration.designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\PaymentHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PaymentHistory.Designer.cs">
+      <DependentUpon>PaymentHistory.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PaymentHistory.resx">
+      <DependentUpon>PaymentHistory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
