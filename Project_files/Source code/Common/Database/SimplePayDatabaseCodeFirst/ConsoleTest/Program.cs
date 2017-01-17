@@ -18,7 +18,7 @@ namespace ConsoleTest
             //CurrencyRepo.Add(new Entities.Currency() { FullName = "Grivna", ShortName = "UAH" });
 
 
-           CurrencyRepo.Delete(CurrencyRepo.SelectById(5));
+           //CurrencyRepo.Delete(CurrencyRepo.SelectById(5));
             var currencies = CurrencyRepo.GetAll();
             foreach(var c in currencies)
             {
