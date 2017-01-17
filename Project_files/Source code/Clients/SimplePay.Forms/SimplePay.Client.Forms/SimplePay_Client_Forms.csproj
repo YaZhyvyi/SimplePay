@@ -73,9 +73,7 @@
     <Compile Include="Registration.designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Payment.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="UserControls\Payment.cs" />
     <Compile Include="UserControls\Payment.Designer.cs">
       <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
