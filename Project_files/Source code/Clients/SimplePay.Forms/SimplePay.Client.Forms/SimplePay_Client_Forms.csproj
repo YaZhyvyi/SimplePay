@@ -73,7 +73,9 @@
     <Compile Include="Registration.designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Payment.cs" />
+    <Compile Include="UserControls\Payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UserControls\Payment.Designer.cs">
       <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
@@ -82,6 +84,12 @@
     </Compile>
     <Compile Include="UserControls\PaymentHistory.Designer.cs">
       <DependentUpon>PaymentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TabAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TabAccounts.Designer.cs">
+      <DependentUpon>TabAccounts.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Transfer.cs">
       <SubType>UserControl</SubType>
@@ -116,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PaymentHistory.resx">
       <DependentUpon>PaymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TabAccounts.resx">
+      <DependentUpon>TabAccounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Transfer.resx">
       <DependentUpon>Transfer.cs</DependentUpon>
