@@ -1,4 +1,4 @@
-﻿namespace Client
+﻿namespace SimplePay_Client_Forms
 {
     partial class Registration
     {

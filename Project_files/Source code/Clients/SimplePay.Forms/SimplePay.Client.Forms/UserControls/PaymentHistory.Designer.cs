@@ -1,4 +1,4 @@
-﻿namespace SimplePay_Client_Form_LogIn.UserControls
+﻿namespace SimplePay_Client_Forms
 {
     partial class PaymentHistory
     {
@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // PaymentHistory
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "PaymentHistory";
-            this.Size = new System.Drawing.Size(555, 371);
-            this.ResumeLayout(false);
+			this.label1 = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(425, 109);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(35, 13);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "label1";
+			// 
+			// PaymentHistory
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.label1);
+			this.Name = "PaymentHistory";
+			this.Size = new System.Drawing.Size(593, 409);
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
         }
 
-        #endregion
-    }
+		#endregion
+
+		private System.Windows.Forms.Label label1;
+	}
 }

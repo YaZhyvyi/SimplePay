@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SimplePay_Client_Form_LogIn.UserControls
+namespace SimplePay_Client_Forms
 {
     public partial class PaymentHistory : UserControl
     {

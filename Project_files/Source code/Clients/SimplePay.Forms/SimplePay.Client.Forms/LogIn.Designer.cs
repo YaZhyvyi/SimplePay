@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace SimplePay_Client_Forms
 {
-	partial class Form1
+	partial class LogIn
 	{
 		/// <summary>
 		/// Required designer variable.
