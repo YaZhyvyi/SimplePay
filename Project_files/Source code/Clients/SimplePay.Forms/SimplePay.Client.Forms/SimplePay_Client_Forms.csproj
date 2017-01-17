@@ -85,11 +85,11 @@
     <Compile Include="UserControls\PaymentHistory.Designer.cs">
       <DependentUpon>PaymentHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\TabAccounts.cs">
+    <Compile Include="UserControls\Transfer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\TabAccounts.Designer.cs">
-      <DependentUpon>TabAccounts.cs</DependentUpon>
+    <Compile Include="UserControls\Transfer.Designer.cs">
+      <DependentUpon>Transfer.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
@@ -119,8 +119,8 @@
     <EmbeddedResource Include="UserControls\PaymentHistory.resx">
       <DependentUpon>PaymentHistory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\TabAccounts.resx">
-      <DependentUpon>TabAccounts.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Transfer.resx">
+      <DependentUpon>Transfer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
