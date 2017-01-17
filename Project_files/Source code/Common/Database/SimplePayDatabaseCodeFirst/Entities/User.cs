@@ -17,7 +17,7 @@ namespace Entities
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }
-        public DateTime DateTime { get; set; }
+        public DateTime BirthDate { get; set; }
 
 
         public List<Transaction> Transactions { get; set; }

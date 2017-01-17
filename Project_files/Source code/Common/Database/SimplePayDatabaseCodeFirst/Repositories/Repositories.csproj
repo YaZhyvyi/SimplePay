@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
-      <HintPath>..\..\..\..\..\Desktop\sp svn\trunk\Project_files\Source code\Common\ThirdParty\EntityFramework\EntityFramework.6.1.3\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\..\..\ThirdParty\EntityFramework\EntityFramework.6.1.3\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\..\..\..\..\Desktop\sp svn\trunk\Project_files\Source code\Common\ThirdParty\EntityFramework\EntityFramework.6.1.3\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\..\..\ThirdParty\EntityFramework\EntityFramework.6.1.3\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,9 +53,9 @@
       <Project>{bc3d1b46-d00d-44ec-abbd-9fc3e3b79ac5}</Project>
       <Name>DatabaseLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entities\Entities.csproj">
+    <ProjectReference Include="..\Entities\DTL.csproj">
       <Project>{866c5db2-ad7b-46ea-9985-3bb98aec8f86}</Project>
-      <Name>Entities</Name>
+      <Name>DTL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{8e4bef5c-fb83-4a3a-b269-c88257b27626}</Project>

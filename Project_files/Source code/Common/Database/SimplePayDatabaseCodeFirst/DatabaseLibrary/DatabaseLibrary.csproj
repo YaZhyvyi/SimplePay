@@ -32,11 +32,11 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ThirdParty\EntityFramework\EntityFramework.6.1.3\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\ThirdParty\EntityFramework\EntityFramework.6.1.3\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -50,28 +50,26 @@
   <ItemGroup>
     <Compile Include="Context\SPContext.cs" />
     <Compile Include="DataModels\Models.cs" />
-    <Compile Include="Migrations\201701171043234_first.cs" />
-    <Compile Include="Migrations\201701171043234_first.Designer.cs">
-      <DependentUpon>201701171043234_first.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201701171152457_second.cs" />
-    <Compile Include="Migrations\201701171152457_second.Designer.cs">
-      <DependentUpon>201701171152457_second.cs</DependentUpon>
+    <Compile Include="Migrations\201701171944428_InitialCreate.cs" />
+    <Compile Include="Migrations\201701171944428_InitialCreate.Designer.cs">
+      <DependentUpon>201701171944428_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701171043234_first.resx">
-      <DependentUpon>201701171043234_first.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701171152457_second.resx">
-      <DependentUpon>201701171152457_second.cs</DependentUpon>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701171944428_InitialCreate.resx">
+      <DependentUpon>201701171944428_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Folder Include="SQL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

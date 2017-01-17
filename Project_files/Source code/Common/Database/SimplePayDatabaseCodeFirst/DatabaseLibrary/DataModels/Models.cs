@@ -47,17 +47,25 @@ namespace DatabaseLibrary.DataModels
 
     }
 
+    public enum TransactionType
+    { 
+        Payment, //оплата товару/послуги
+        Transfer, //переказ коштів іншому користувачу
+        Refill, //поповнити рахунок
+        Withdraw //зняти кошти з рахунку
+    }
+
     public class Transaction
     {
         [Key]
         public int ID { get; set; }
         [Required]
-        public DateTime DateTime { get; set; }
-        [MaxLength(40)]
-        public string ToSomeone { get; set; }
+        public TransactionType TransactionType { get; set; }
+        [Required]
+        public DateTime TransactionDate { get; set; }
         [Required]
         public double Summa { get; set; }
-        [MaxLength(255)]
+        [MaxLength(1000)]
         public string Comment { get; set; }
 
 
@@ -84,15 +92,12 @@ namespace DatabaseLibrary.DataModels
         public string Password { get; set; }
         [MaxLength(50), Index(IsUnique = true)]
         public string Email { get; set; }
-        //[Column(TypeName = "NVARCHAR")]
-        //[StringLength(255)]
-        //[Index]
         [Required]
         [RegularExpression(@"^\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}$", ErrorMessage = "Number should match the following pattern: (xxx)xxx-xx-xx")]
         public string Phone { get; set; }
         [MaxLength(50)]
         public string Address { get; set; }
-        public DateTime DateTime { get; set; }
+        public DateTime BirthDate { get; set; }
 
 
         public virtual List<Transaction> Transactions { get; set; }

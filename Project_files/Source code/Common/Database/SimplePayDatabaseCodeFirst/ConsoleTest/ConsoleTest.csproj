@@ -53,12 +53,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj">
+    <ProjectReference Include="..\Entities\DTL.csproj">
       <Project>{866c5db2-ad7b-46ea-9985-3bb98aec8f86}</Project>
-      <Name>Entities</Name>
+      <Name>DTL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{8e4bef5c-fb83-4a3a-b269-c88257b27626}</Project>
