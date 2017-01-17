@@ -73,6 +73,12 @@
     <Compile Include="Registration.designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\PaymentHistory.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PaymentHistory.resx">
       <DependentUpon>PaymentHistory.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +125,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paypal-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-gateways.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
