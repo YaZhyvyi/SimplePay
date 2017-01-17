@@ -83,9 +83,29 @@ namespace SimplePay_Client_Forms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgres1 {
+            get {
+                object obj = ResourceManager.GetObject("imgres1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap payment_gateways {
             get {
                 object obj = ResourceManager.GetObject("payment-gateways", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap payment_gateways1 {
+            get {
+                object obj = ResourceManager.GetObject("payment-gateways1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
