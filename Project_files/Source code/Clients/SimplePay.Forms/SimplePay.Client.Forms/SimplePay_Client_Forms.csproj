@@ -59,6 +59,12 @@
     <Compile Include="Main_User.Designer.cs">
       <DependentUpon>Main_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Pinkod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Pinkod.Designer.cs">
+      <DependentUpon>Pinkod.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Profile_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main_User.resx">
       <DependentUpon>Main_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Pinkod.resx">
+      <DependentUpon>Pinkod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Profile_UserControl.resx">
       <DependentUpon>Profile_UserControl.cs</DependentUpon>
