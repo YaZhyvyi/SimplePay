@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿
+using SimplePay.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace Interfaces
         void Edit(Currency currency);
         void Delete(Currency currency);
 
-        Entities.Currency SelectById(int id);
+        Currency SelectById(int id);
+        Currency SelectByShortName(string ShortName);
+
     }
 }

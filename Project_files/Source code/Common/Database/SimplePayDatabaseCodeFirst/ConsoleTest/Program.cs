@@ -1,6 +1,7 @@
-﻿using Entities;
+﻿
 using Interfaces;
 using Repositories;
+using SimplePay.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,10 @@ namespace ConsoleTest
                 Console.WriteLine("-----------------------------");
             }
 
+
+            IAccountRepo acctREepo = new AccountRepo();
+
+            acctREepo.FilterAccounts(a => a.ID > 5, 1, 5);
             Console.ReadKey();
         }
     }

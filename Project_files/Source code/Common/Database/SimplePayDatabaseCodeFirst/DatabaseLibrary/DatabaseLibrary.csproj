@@ -50,9 +50,13 @@
   <ItemGroup>
     <Compile Include="Context\SPContext.cs" />
     <Compile Include="DataModels\Models.cs" />
-    <Compile Include="Migrations\201701181126293_create.cs" />
-    <Compile Include="Migrations\201701181126293_create.Designer.cs">
-      <DependentUpon>201701181126293_create.cs</DependentUpon>
+    <Compile Include="Migrations\201701181741314_ChangeTransaction.cs" />
+    <Compile Include="Migrations\201701181741314_ChangeTransaction.Designer.cs">
+      <DependentUpon>201701181741314_ChangeTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701181756041_ChangeTransaction1.cs" />
+    <Compile Include="Migrations\201701181756041_ChangeTransaction1.Designer.cs">
+      <DependentUpon>201701181756041_ChangeTransaction1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,8 +71,11 @@
     <Folder Include="SQL\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701181126293_create.resx">
-      <DependentUpon>201701181126293_create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701181741314_ChangeTransaction.resx">
+      <DependentUpon>201701181741314_ChangeTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701181756041_ChangeTransaction1.resx">
+      <DependentUpon>201701181756041_ChangeTransaction1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

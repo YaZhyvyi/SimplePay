@@ -1,9 +1,10 @@
 ﻿using DatabaseLibrary.Context;
-using Entities;
 using Interfaces;
+using SimplePay.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Models = DatabaseLibrary.DataModels;
@@ -12,7 +13,7 @@ namespace Repositories
 {
     public class CurrencyRepo : ICurrencyRepo
     {
-        public IEnumerable<Entities.Currency> GetAll()
+        public IEnumerable<Currency> GetAll()
         {
             using (var db = new SPContext())
             {
@@ -25,7 +26,7 @@ namespace Repositories
             }
         }
 
-        public void Add(Entities.Currency currency)
+        public void Add(Currency currency)
         {
             using (var db = new SPContext())
             {
@@ -40,7 +41,7 @@ namespace Repositories
             }
         }
 
-        public void Edit(Entities.Currency currency)
+        public void Edit(Currency currency)
         {
             using (var db = new SPContext())
             {
@@ -52,7 +53,7 @@ namespace Repositories
             }
         }
 
-        public void Delete(Entities.Currency currency)
+        public void Delete(Currency currency)
         {
             using (var db = new SPContext())
             {
@@ -62,8 +63,15 @@ namespace Repositories
             }
         }
 
+        //public IEnumerable<Currency> FilterCurrencies(Expression<Func<Account, bool>> match)
+        //{
+        //    using (var db = new SPContext())
+        //    {
+        //        return db.Currencies..Where(match).ToList();
+        //    }
+        //}
 
-        public Entities.Currency SelectById(int id)
+        public Currency SelectById(int id)
         {
             using (var db = new SPContext())
             {
@@ -71,6 +79,21 @@ namespace Repositories
                 return new Currency()
                 { 
                     ID = findCurr.ID,  
+                    ShortName = findCurr.ShortName,
+                    FullName = findCurr.FullName
+                };
+            }
+        }
+
+
+        public Currency SelectByShortName(string ShortName)
+        {
+            using (var db = new SPContext())
+            {
+                Models.Currency findCurr = db.Currencies.FirstOrDefault(c => c.ShortName == ShortName);
+                return new Currency()
+                {
+                    ID = findCurr.ID,
                     ShortName = findCurr.ShortName,
                     FullName = findCurr.FullName
                 };

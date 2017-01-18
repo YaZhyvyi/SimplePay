@@ -22,6 +22,8 @@ namespace DatabaseLibrary.DataModels
         public virtual Currency Currency { get; set; }
         [Required]
         public virtual User User { get; set; }
+
+        public virtual List<Transaction> Transactions { get; set; }
     }
 
     public class Currency
@@ -72,8 +74,8 @@ namespace DatabaseLibrary.DataModels
         [Required]
         public virtual CurrencyForDate CurrencyForDate { get; set; }
         [Required]
-        public virtual User FromUser { get; set; }
-        public virtual User ToUser { get; set; }
+        public virtual Account FromUserAccount { get; set; }
+        public virtual Account ToUserAccount { get; set; }
     }
 
     public class User
@@ -100,7 +102,7 @@ namespace DatabaseLibrary.DataModels
         public DateTime BirthDate { get; set; }
 
 
-        public virtual List<Transaction> Transactions { get; set; }
+        
         public virtual List<Account> Accounts { get; set; }
     }
 

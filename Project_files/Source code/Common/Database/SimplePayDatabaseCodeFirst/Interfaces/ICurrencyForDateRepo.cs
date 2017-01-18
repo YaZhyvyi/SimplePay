@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿
+using SimplePay.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
