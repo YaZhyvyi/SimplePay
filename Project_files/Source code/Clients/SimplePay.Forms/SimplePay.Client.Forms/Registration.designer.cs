@@ -196,7 +196,7 @@
 			// title
 			// 
 			this.title.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.title.Location = new System.Drawing.Point(83, 9);
+			this.title.Location = new System.Drawing.Point(69, 9);
 			this.title.Name = "title";
 			this.title.Size = new System.Drawing.Size(188, 56);
 			this.title.TabIndex = 11;
@@ -217,7 +217,7 @@
 			// 
 			this.btnCancel.BackColor = System.Drawing.Color.White;
 			this.btnCancel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.btnCancel.Location = new System.Drawing.Point(171, 480);
+			this.btnCancel.Location = new System.Drawing.Point(12, 480);
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.Size = new System.Drawing.Size(75, 26);
 			this.btnCancel.TabIndex = 12;

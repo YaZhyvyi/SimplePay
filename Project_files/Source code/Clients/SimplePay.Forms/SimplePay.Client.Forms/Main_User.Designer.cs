@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_User));
 			this.ProfileLB = new System.Windows.Forms.Label();
 			this.AccountsLB = new System.Windows.Forms.Label();
 			this.PayHLB = new System.Windows.Forms.Label();
@@ -35,8 +36,11 @@
 			this.AddLB = new System.Windows.Forms.Label();
 			this.WithdrawLB = new System.Windows.Forms.Label();
 			this.AboutLB = new System.Windows.Forms.Label();
-			this.profile_UserControl1 = new SimplePay_Client_Forms.Profile_UserControl();
+			this.payment1 = new SimplePay_Client_Forms.Payment();
+			this.tabAccounts1 = new SimplePay_Client_Forms.TabAccounts();
+			this.transfer1 = new SimplePay_Client_Forms.Transfer();
 			this.paymentHistory1 = new SimplePay_Client_Forms.PaymentHistory();
+			this.profile_UserControl1 = new SimplePay_Client_Forms.Profile_UserControl();
 			this.SuspendLayout();
 			// 
 			// ProfileLB
@@ -132,6 +136,39 @@
 			this.AboutLB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.AboutLB.Click += new System.EventHandler(this.AboutLB_Click);
 			// 
+			// payment1
+			// 
+			this.payment1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("payment1.BackgroundImage")));
+			this.payment1.Location = new System.Drawing.Point(145, 0);
+			this.payment1.Name = "payment1";
+			this.payment1.Size = new System.Drawing.Size(593, 409);
+			this.payment1.TabIndex = 11;
+			this.payment1.Visible = false;
+			// 
+			// tabAccounts1
+			// 
+			this.tabAccounts1.Location = new System.Drawing.Point(146, 0);
+			this.tabAccounts1.Name = "tabAccounts1";
+			this.tabAccounts1.Size = new System.Drawing.Size(593, 409);
+			this.tabAccounts1.TabIndex = 10;
+			this.tabAccounts1.Visible = false;
+			// 
+			// transfer1
+			// 
+			this.transfer1.Location = new System.Drawing.Point(170, 259);
+			this.transfer1.Name = "transfer1";
+			this.transfer1.Size = new System.Drawing.Size(593, 409);
+			this.transfer1.TabIndex = 9;
+			this.transfer1.Visible = false;
+			// 
+			// paymentHistory1
+			// 
+			this.paymentHistory1.Location = new System.Drawing.Point(148, 0);
+			this.paymentHistory1.Name = "paymentHistory1";
+			this.paymentHistory1.Size = new System.Drawing.Size(593, 409);
+			this.paymentHistory1.TabIndex = 8;
+			this.paymentHistory1.Visible = false;
+			// 
 			// profile_UserControl1
 			// 
 			this.profile_UserControl1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -142,19 +179,14 @@
 			this.profile_UserControl1.TabIndex = 7;
 			this.profile_UserControl1.Visible = false;
 			// 
-			// paymentHistory1
-			// 
-			this.paymentHistory1.Location = new System.Drawing.Point(148, 0);
-			this.paymentHistory1.Name = "paymentHistory1";
-			this.paymentHistory1.Size = new System.Drawing.Size(593, 409);
-			this.paymentHistory1.TabIndex = 8;
-			this.paymentHistory1.Visible = false;
-			// 
 			// Main_User
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(741, 408);
+			this.Controls.Add(this.payment1);
+			this.Controls.Add(this.tabAccounts1);
+			this.Controls.Add(this.transfer1);
 			this.Controls.Add(this.paymentHistory1);
 			this.Controls.Add(this.profile_UserControl1);
 			this.Controls.Add(this.AboutLB);
@@ -181,5 +213,8 @@
 		private System.Windows.Forms.Label AboutLB;
 		private Profile_UserControl profile_UserControl1;
 		private PaymentHistory paymentHistory1;
+		private Transfer transfer1;
+		private SimplePay_Client_Forms.TabAccounts tabAccounts1;
+		private SimplePay_Client_Forms.Payment payment1;
 	}
 }

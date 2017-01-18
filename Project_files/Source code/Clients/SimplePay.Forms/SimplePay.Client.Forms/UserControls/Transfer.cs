@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SimplePay_Client_Forms.UserControls
+namespace SimplePay_Client_Forms
 {
     public partial class Transfer : UserControl
     {

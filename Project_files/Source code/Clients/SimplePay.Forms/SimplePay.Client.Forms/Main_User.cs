@@ -13,7 +13,10 @@ namespace SimplePay_Client_Forms
 	public partial class Main_User : Form
 	{
 		Profile_UserControl pUC = new Profile_UserControl();
-		PaymentHistory payUC = new PaymentHistory();
+		PaymentHistory payhUC = new PaymentHistory();
+		TabAccounts tabUC = new TabAccounts();
+		Payment paymUC = new Payment();
+		Transfer tranUC = new Transfer();
 
 		public Main_User()
 		{
@@ -44,7 +47,10 @@ namespace SimplePay_Client_Forms
 			pUC.Visible = true;
 			pUC.Dock = DockStyle.Right;
 
-			payUC.Visible = false;
+			payhUC.Visible = false;
+			tabUC.Visible = false;
+			paymUC.Visible = false;
+			tranUC.Visible = false;
 		}
 
 		private void AccountsLB_Click(object sender, EventArgs e)
@@ -66,7 +72,15 @@ namespace SimplePay_Client_Forms
 			AccountsLB.ForeColor = Color.White;
 			#endregion Color
 
+			Controls.Add(tabUC);
 
+			tabUC.Visible = true;
+			tabUC.Dock = DockStyle.Right;
+
+			payhUC.Visible = false;
+			pUC.Visible = false;
+			paymUC.Visible = false;
+			tranUC.Visible = false;
 		}
 
 		private void PayHLB_Click(object sender, EventArgs e)
@@ -88,12 +102,15 @@ namespace SimplePay_Client_Forms
 			PayHLB.ForeColor = Color.White;
 			#endregion Color
 
-			Controls.Add(payUC);
+			Controls.Add(payhUC);
 
-			payUC.Visible = true;
-			payUC.Dock = DockStyle.Right;
+			payhUC.Visible = true;
+			payhUC.Dock = DockStyle.Right;
 
+			tabUC.Visible = false;
 			pUC.Visible = false;
+			paymUC.Visible = false;
+			tranUC.Visible = false;
 		}
 
 		private void TransferLB_Click(object sender, EventArgs e)
@@ -115,7 +132,15 @@ namespace SimplePay_Client_Forms
 			TransferLB.ForeColor = Color.White;
 			#endregion Color
 
+			Controls.Add(tranUC);
 
+			tranUC.Visible = true;
+			tranUC.Dock = DockStyle.Right;
+
+			payhUC.Visible = false;
+			pUC.Visible = false;
+			paymUC.Visible = false;
+			tabUC.Visible = false;
 		}
 
 		private void AddLB_Click(object sender, EventArgs e)
@@ -137,7 +162,7 @@ namespace SimplePay_Client_Forms
 			AddLB.ForeColor = Color.White;
 			#endregion Color
 
-
+			
 		}
 
 		private void WithdrawLB_Click(object sender, EventArgs e)
@@ -159,7 +184,15 @@ namespace SimplePay_Client_Forms
 			WithdrawLB.ForeColor = Color.White;
 			#endregion Color
 
+			Controls.Add(paymUC);
 
+			paymUC.Visible = true;
+			paymUC.Dock = DockStyle.Right;
+
+			payhUC.Visible = false;
+			pUC.Visible = false;
+			tranUC.Visible = false;
+			tabUC.Visible = false;
 		}
 
 		private void AboutLB_Click(object sender, EventArgs e)

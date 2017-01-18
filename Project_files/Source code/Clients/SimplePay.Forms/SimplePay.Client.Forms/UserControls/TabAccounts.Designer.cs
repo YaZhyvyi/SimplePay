@@ -1,4 +1,4 @@
-﻿namespace SimplePay_Client_Form_LogIn.UserControls
+﻿namespace SimplePay_Client_Forms
 {
     partial class TabAccounts
     {
