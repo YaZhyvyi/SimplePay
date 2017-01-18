@@ -128,18 +128,17 @@
             // 
             // Add
             // 
-            this.Add.Image = global::SimplePay_Client_Forms.Properties.Resources.imgres1;
             this.Add.Location = new System.Drawing.Point(47, 121);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(181, 174);
+            this.Add.Size = new System.Drawing.Size(167, 45);
             this.Add.TabIndex = 8;
+            this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = true;
             // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SimplePay_Client_Forms.Properties.Resources.payment_gateways1;
             this.Controls.Add(this.Add);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

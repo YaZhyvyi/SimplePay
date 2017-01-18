@@ -144,18 +144,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imgres.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1234.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\paypal-logo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\payment-gateways.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -118,11 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="payment-gateways1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\payment-gateways.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1234" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1234.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="payment-gateways" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\payment-gateways.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payment-gateways1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\payment-gateways.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yura-best" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yura-best.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgres1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgres.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="imgres" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imgres.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,10 +139,7 @@
   <data name="paypal-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paypal-logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1234" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1234.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imgres1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgres.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Yura-best1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yura-best.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
