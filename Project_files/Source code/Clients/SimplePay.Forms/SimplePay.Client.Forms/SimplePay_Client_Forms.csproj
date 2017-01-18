@@ -109,6 +109,12 @@
     <Compile Include="UserControls\WithdrawSecondFunk.Designer.cs">
       <DependentUpon>WithdrawSecondFunk.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\WithdrawZniatia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WithdrawZniatia.Designer.cs">
+      <DependentUpon>WithdrawZniatia.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\WithdrawSecondFunk.resx">
       <DependentUpon>WithdrawSecondFunk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WithdrawZniatia.resx">
+      <DependentUpon>WithdrawZniatia.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
