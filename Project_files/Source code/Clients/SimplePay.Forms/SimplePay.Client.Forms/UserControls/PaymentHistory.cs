@@ -27,7 +27,7 @@ namespace SimplePay_Client_Forms
         private void BindGrid(int pageIndex)
         {
             DataTable dt = new DataTable();
-
+      
             dt.Columns.Add("Date", typeof(DateTime));
             dt.Columns.Add("Card", typeof(string));
             dt.Columns.Add("Info", typeof(string));
