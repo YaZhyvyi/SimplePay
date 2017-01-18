@@ -16,5 +16,6 @@ namespace SimplePay_Client_Forms
         {
             InitializeComponent();
         }
+
     }
 }

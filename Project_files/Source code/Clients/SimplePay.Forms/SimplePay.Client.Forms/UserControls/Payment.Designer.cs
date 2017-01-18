@@ -128,7 +128,7 @@
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(47, 121);
+            this.Add.Location = new System.Drawing.Point(95, 119);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(167, 45);
             this.Add.TabIndex = 8;
