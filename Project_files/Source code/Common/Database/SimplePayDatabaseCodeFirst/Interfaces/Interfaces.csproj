@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SimplePay.DataTransferObjects">
-      <HintPath>..\..\..\SimplePay.DataTransferObjects\SimplePay.DataTransferObjects.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +45,12 @@
     <Compile Include="ITransactionRepo.cs" />
     <Compile Include="IUserRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SimplePay.DataTransferObjects\SimplePay.DataTransferObjects.csproj">
+      <Project>{0c0867d7-0588-416a-acdf-ece2c13e3b2f}</Project>
+      <Name>SimplePay.DataTransferObjects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

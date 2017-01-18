@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositorie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{46884C18-237E-4572-BCE5-EFD3964700EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePay.DataTransferObjects", "..\..\SimplePay.DataTransferObjects\SimplePay.DataTransferObjects.csproj", "{0C0867D7-0588-416A-ACDF-ECE2C13E3B2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{46884C18-237E-4572-BCE5-EFD3964700EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46884C18-237E-4572-BCE5-EFD3964700EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46884C18-237E-4572-BCE5-EFD3964700EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C0867D7-0588-416A-ACDF-ECE2C13E3B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C0867D7-0588-416A-ACDF-ECE2C13E3B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C0867D7-0588-416A-ACDF-ECE2C13E3B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C0867D7-0588-416A-ACDF-ECE2C13E3B2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

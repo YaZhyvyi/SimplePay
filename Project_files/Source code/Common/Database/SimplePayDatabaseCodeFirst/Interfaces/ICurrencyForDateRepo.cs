@@ -12,8 +12,6 @@ namespace Interfaces
     {
         IEnumerable<CurrencyForDate> GetAll();
         void Add(CurrencyForDate currency);
-        void Edit(CurrencyForDate currency);
-        void Delete(CurrencyForDate currency);
 
         CurrencyForDate SelectByDate(DateTime date);
     }

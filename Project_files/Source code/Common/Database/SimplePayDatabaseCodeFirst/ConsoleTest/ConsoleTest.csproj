@@ -40,9 +40,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="SimplePay.DataTransferObjects">
-      <HintPath>..\..\..\SimplePay.DataTransferObjects\SimplePay.DataTransferObjects.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -63,6 +60,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\SimplePay.DataTransferObjects\SimplePay.DataTransferObjects.csproj">
+      <Project>{0c0867d7-0588-416a-acdf-ece2c13e3b2f}</Project>
+      <Name>SimplePay.DataTransferObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{8e4bef5c-fb83-4a3a-b269-c88257b27626}</Project>
       <Name>Interfaces</Name>
