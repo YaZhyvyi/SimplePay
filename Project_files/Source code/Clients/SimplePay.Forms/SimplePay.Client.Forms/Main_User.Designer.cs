@@ -197,7 +197,6 @@
             this.Name = "Main_User";
             this.Text = "SimplePay: @User";
             this.ResumeLayout(false);
-
 		}
 
 		#endregion
