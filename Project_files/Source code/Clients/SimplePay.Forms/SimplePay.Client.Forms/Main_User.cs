@@ -11,13 +11,14 @@ using System.Windows.Forms;
 namespace SimplePay_Client_Forms
 {
 	public partial class Main_User : Form
-	{
+	{ 
 		Profile_UserControl pUC = new Profile_UserControl();
 		PaymentHistory payhUC = new PaymentHistory();
 		TabAccounts tabUC = new TabAccounts();
 		Payment paymUC = new Payment();
 		Transfer tranUC = new Transfer();
 		About aboutUC = new About();
+		WithdrawZniatia withUC = new WithdrawZniatia();
 
 		public Main_User()
 		{
@@ -43,6 +44,8 @@ namespace SimplePay_Client_Forms
 			ProfileLB.ForeColor = Color.White;
 			#endregion Color
 
+			this.Text = "SimplePay: @User : Profile";
+
 			Controls.Add(pUC);
 
 			pUC.Visible = true;
@@ -53,6 +56,7 @@ namespace SimplePay_Client_Forms
 			paymUC.Visible = false;
 			tranUC.Visible = false;
 			aboutUC.Visible = false;
+			withUC.Visible = false;
 		}
 
 		private void AccountsLB_Click(object sender, EventArgs e)
@@ -74,6 +78,8 @@ namespace SimplePay_Client_Forms
 			AccountsLB.ForeColor = Color.White;
 			#endregion Color
 
+			this.Text = "SimplePay: @User : Accounts";
+
 			Controls.Add(tabUC);
 
 			tabUC.Visible = true;
@@ -84,6 +90,7 @@ namespace SimplePay_Client_Forms
 			paymUC.Visible = false;
 			tranUC.Visible = false;
 			aboutUC.Visible = false;
+			withUC.Visible = false;
 		}
 
 		private void PayHLB_Click(object sender, EventArgs e)
@@ -105,6 +112,8 @@ namespace SimplePay_Client_Forms
 			PayHLB.ForeColor = Color.White;
 			#endregion Color
 
+			this.Text = "SimplePay: @User : Pay History";
+
 			Controls.Add(payhUC);
 
 			payhUC.Visible = true;
@@ -115,6 +124,7 @@ namespace SimplePay_Client_Forms
 			paymUC.Visible = false;
 			tranUC.Visible = false;
 			aboutUC.Visible = false;
+			withUC.Visible = false;
 		}
 
 		private void TransferLB_Click(object sender, EventArgs e)
@@ -136,6 +146,8 @@ namespace SimplePay_Client_Forms
 			TransferLB.ForeColor = Color.White;
 			#endregion Color
 
+			this.Text = "SimplePay: @User : Transfer";
+
 			Controls.Add(tranUC);
 
 			tranUC.Visible = true;
@@ -146,6 +158,7 @@ namespace SimplePay_Client_Forms
 			paymUC.Visible = false;
 			tabUC.Visible = false;
 			aboutUC.Visible = false;
+			withUC.Visible = false;
 		}
 
 		private void AddLB_Click(object sender, EventArgs e)
@@ -167,6 +180,8 @@ namespace SimplePay_Client_Forms
 			AddLB.ForeColor = Color.White;
 			#endregion Color
 
+			this.Text = "SimplePay: @User : Add";
+
 			Controls.Add(paymUC);
 
 			paymUC.Visible = true;
@@ -177,6 +192,7 @@ namespace SimplePay_Client_Forms
 			tranUC.Visible = false;
 			tabUC.Visible = false;
 			aboutUC.Visible = false;
+			withUC.Visible = false;
 		}
 
 		private void WithdrawLB_Click(object sender, EventArgs e)
@@ -198,7 +214,19 @@ namespace SimplePay_Client_Forms
 			WithdrawLB.ForeColor = Color.White;
 			#endregion Color
 
-			
+			this.Text = "SimplePay: @User : withUCdraw";
+
+			Controls.Add(withUC);
+
+			withUC.Visible = true;
+			withUC.Dock = DockStyle.Right;
+
+			payhUC.Visible = false;
+			pUC.Visible = false;
+			tranUC.Visible = false;
+			tabUC.Visible = false;
+			paymUC.Visible = false;
+			aboutUC.Visible = false;
 		}
 
 		private void AboutLB_Click(object sender, EventArgs e)
@@ -220,6 +248,8 @@ namespace SimplePay_Client_Forms
 			AboutLB.ForeColor = Color.White;
 			#endregion Color
 
+			this.Text = "SimplePay: @User : About";
+
 			Controls.Add(aboutUC);
 
 			aboutUC.Visible = true;
@@ -230,6 +260,8 @@ namespace SimplePay_Client_Forms
 			tranUC.Visible = false;
 			tabUC.Visible = false;
 			paymUC.Visible = false;
+			withUC.Visible = false;
 		}
+
 	}
 }

@@ -27,7 +27,7 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent()
-		{
+		{	
 			this.ProfileLB = new System.Windows.Forms.Label();
 			this.AccountsLB = new System.Windows.Forms.Label();
 			this.PayHLB = new System.Windows.Forms.Label();
@@ -35,6 +35,7 @@
 			this.AddLB = new System.Windows.Forms.Label();
 			this.WithdrawLB = new System.Windows.Forms.Label();
 			this.AboutLB = new System.Windows.Forms.Label();
+			this.withdrawZniatia1 = new SimplePay_Client_Forms.WithdrawZniatia();
 			this.about1 = new SimplePay_Client_Forms.About();
 			this.payment1 = new SimplePay_Client_Forms.Payment();
 			this.tabAccounts1 = new SimplePay_Client_Forms.TabAccounts();
@@ -136,6 +137,14 @@
 			this.AboutLB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.AboutLB.Click += new System.EventHandler(this.AboutLB_Click);
 			// 
+			// withdrawZniatia1
+			// 
+			this.withdrawZniatia1.Location = new System.Drawing.Point(146, 0);
+			this.withdrawZniatia1.Name = "withdrawZniatia1";
+			this.withdrawZniatia1.Size = new System.Drawing.Size(593, 409);
+			this.withdrawZniatia1.TabIndex = 0;
+			this.withdrawZniatia1.Visible = false;
+			// 
 			// about1
 			// 
 			this.about1.Location = new System.Drawing.Point(147, 0);
@@ -191,6 +200,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(741, 408);
+			this.Controls.Add(this.withdrawZniatia1);
 			this.Controls.Add(this.about1);
 			this.Controls.Add(this.payment1);
 			this.Controls.Add(this.tabAccounts1);
@@ -222,8 +232,9 @@
 		private Profile_UserControl profile_UserControl1;
 		private PaymentHistory paymentHistory1;
 		private Transfer transfer1;
-		private SimplePay_Client_Forms.TabAccounts tabAccounts1;
-		private SimplePay_Client_Forms.Payment payment1;
+		private TabAccounts tabAccounts1;
+		private Payment payment1;
 		private About about1;
+		private WithdrawZniatia withdrawZniatia1;
 	}
 }
