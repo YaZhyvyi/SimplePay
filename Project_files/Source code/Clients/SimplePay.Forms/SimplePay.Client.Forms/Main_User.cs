@@ -17,6 +17,7 @@ namespace SimplePay_Client_Forms
 		TabAccounts tabUC = new TabAccounts();
 		Payment paymUC = new Payment();
 		Transfer tranUC = new Transfer();
+		About aboutUC = new About();
 
 		public Main_User()
 		{
@@ -51,6 +52,7 @@ namespace SimplePay_Client_Forms
 			tabUC.Visible = false;
 			paymUC.Visible = false;
 			tranUC.Visible = false;
+			aboutUC.Visible = false;
 		}
 
 		private void AccountsLB_Click(object sender, EventArgs e)
@@ -81,6 +83,7 @@ namespace SimplePay_Client_Forms
 			pUC.Visible = false;
 			paymUC.Visible = false;
 			tranUC.Visible = false;
+			aboutUC.Visible = false;
 		}
 
 		private void PayHLB_Click(object sender, EventArgs e)
@@ -111,6 +114,7 @@ namespace SimplePay_Client_Forms
 			pUC.Visible = false;
 			paymUC.Visible = false;
 			tranUC.Visible = false;
+			aboutUC.Visible = false;
 		}
 
 		private void TransferLB_Click(object sender, EventArgs e)
@@ -141,6 +145,7 @@ namespace SimplePay_Client_Forms
 			pUC.Visible = false;
 			paymUC.Visible = false;
 			tabUC.Visible = false;
+			aboutUC.Visible = false;
 		}
 
 		private void AddLB_Click(object sender, EventArgs e)
@@ -171,6 +176,7 @@ namespace SimplePay_Client_Forms
 			pUC.Visible = false;
 			tranUC.Visible = false;
 			tabUC.Visible = false;
+			aboutUC.Visible = false;
 		}
 
 		private void WithdrawLB_Click(object sender, EventArgs e)
@@ -212,9 +218,18 @@ namespace SimplePay_Client_Forms
 			WithdrawLB.ForeColor = Color.Black;
 			AboutLB.BackColor = Color.DimGray;
 			AboutLB.ForeColor = Color.White;
-            #endregion Color
+			#endregion Color
 
+			Controls.Add(aboutUC);
 
+			aboutUC.Visible = true;
+			aboutUC.Dock = DockStyle.Right;
+
+			payhUC.Visible = false;
+			pUC.Visible = false;
+			tranUC.Visible = false;
+			tabUC.Visible = false;
+			paymUC.Visible = false;
 		}
 	}
 }
