@@ -12,13 +12,23 @@ namespace SimplePay_Client_Forms
 {
     public partial class PaymentHistory : UserControl
     {
+        DataTable dt;
         public PaymentHistory()
         {
             InitializeComponent();
+
+            dt = new DataTable();
+
+            dt.Columns.Add("Date", typeof(DateTime));
+            dt.Columns.Add("Card", typeof(string));
+            dt.Columns.Add("Info", typeof(string));
+            dt.Columns.Add("Sum", typeof(string));
+            for (int i = 0; i < 25; i++)
+                dt.Rows.Add(new DateTime(2015, 01, i+1), "12345****1234", "платіж", "10.50 грн.");
         }
 
         //Set the Page Size.
-        int PageSize = 15;
+        int PageSize = 3;
         private void PaymentHistory_Load(object sender, EventArgs e)
         {
             this.BindGrid(1);
@@ -26,59 +36,9 @@ namespace SimplePay_Client_Forms
 
         private void BindGrid(int pageIndex)
         {
-            DataTable dt = new DataTable();
-      
-            dt.Columns.Add("Date", typeof(DateTime));
-            dt.Columns.Add("Card", typeof(string));
-            dt.Columns.Add("Info", typeof(string));
-            dt.Columns.Add("Sum", typeof(string));
-
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2015, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-            dt.Rows.Add(new DateTime(2017, 01, 02), "12345****1234", "платіж", "10.50 грн.");
-
-            dgvPH.DataSource = dt;
-          
+            DataTable currentPage = dt.Clone();
+            dt.AsEnumerable().Skip((pageIndex - 1) * PageSize).Take(PageSize).ToList().ForEach(r => currentPage.ImportRow(r));
+            dgvPH.DataSource = currentPage;
             int recordCount = dt.Rows.Count;
             this.PopulatePager(recordCount, pageIndex);
         }
@@ -88,6 +48,8 @@ namespace SimplePay_Client_Forms
             List<Page> pages = new List<Page>();
             int startIndex, endIndex;
             int pagerSpan = 5;
+
+
 
             //Calculate the Start and End Index of pages to be displayed.
             double dblPageCount = (double)((decimal)recordCount / Convert.ToDecimal(PageSize));
@@ -122,16 +84,10 @@ namespace SimplePay_Client_Forms
             }
 
             //Add the First Page Button.
-            if (currentPage > 1)
-            {
                 pages.Add(new Page { Text = "First", Value = "1" });
-            }
 
             //Add the Previous Button.
-            if (currentPage > 1)
-            {
                 pages.Add(new Page { Text = "<<", Value = (currentPage - 1).ToString() });
-            }
 
             for (int i = startIndex; i <= endIndex; i++)
             {
@@ -139,16 +95,10 @@ namespace SimplePay_Client_Forms
             }
 
             //Add the Next Button.
-            if (currentPage < pageCount)
-            {
                 pages.Add(new Page { Text = ">>", Value = (currentPage + 1).ToString() });
-            }
 
             //Add the Last Button.
-            if (currentPage != pageCount)
-            {
                 pages.Add(new Page { Text = "Last", Value = pageCount.ToString() });
-            }
 
             //Clear existing Pager Buttons.
             pnlPager.Controls.Clear();
@@ -158,12 +108,46 @@ namespace SimplePay_Client_Forms
             foreach (Page page in pages)
             {
                 Button btnPage = new Button();
-                btnPage.Location = new System.Drawing.Point(38 * count, 5);
-                btnPage.Size = new System.Drawing.Size(35, 20);
+                
+                //if (page.Text == "<<")
+                //{
+                //    btnPage.Location = new System.Drawing.Point(58 * count, 5);
+                //}
+                //else if (page.Text == "1")
+                //{
+                //    btnPage.Location = new System.Drawing.Point(48 * count, 5);
+                //}
+                //else
+                //{
+                    btnPage.Location = new System.Drawing.Point(38 * count, 5);
+                //}
+
+                if (page.Text == "First" || page.Text == "Last")
+                {
+                    btnPage.Size = new System.Drawing.Size(55, 26);
+                }
+                else
+                {
+                    btnPage.Size = new System.Drawing.Size(35, 26);
+                }
+
                 btnPage.Name = page.Value;
                 btnPage.Text = page.Text;
                 btnPage.Enabled = !page.Selected;
+                btnPage.BackColor = Color.White;
+                //btnPage.Font = new Font("Arial", 12);
                 btnPage.Click += new System.EventHandler(this.Page_Click);
+
+                if (currentPage <= 1 && (page.Text == "First" || page.Text == "<<"))
+                {
+                    btnPage.Enabled = false;
+                }
+
+                if (currentPage == pageCount && (page.Text == ">>" || page.Text == "Last"))
+                {
+                    btnPage.Enabled = false;
+                }
+
                 pnlPager.Controls.Add(btnPage);
                 count++;
             }

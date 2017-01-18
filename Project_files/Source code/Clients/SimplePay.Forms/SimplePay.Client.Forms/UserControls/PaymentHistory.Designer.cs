@@ -38,14 +38,14 @@
             this.dgvPH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPH.Location = new System.Drawing.Point(24, 24);
             this.dgvPH.Name = "dgvPH";
-            this.dgvPH.Size = new System.Drawing.Size(546, 350);
+            this.dgvPH.Size = new System.Drawing.Size(546, 343);
             this.dgvPH.TabIndex = 0;
             // 
             // pnlPager
             // 
-            this.pnlPager.Location = new System.Drawing.Point(24, 380);
+            this.pnlPager.Location = new System.Drawing.Point(24, 373);
             this.pnlPager.Name = "pnlPager";
-            this.pnlPager.Size = new System.Drawing.Size(546, 26);
+            this.pnlPager.Size = new System.Drawing.Size(546, 33);
             this.pnlPager.TabIndex = 1;
             // 
             // PaymentHistory
