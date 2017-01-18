@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,11 @@ namespace Interfaces
 {
     public interface ICurrencyForDateRepo
     {
+        IEnumerable<CurrencyForDate> GetAll();
+        void Add(CurrencyForDate currency);
+        void Edit(CurrencyForDate currency);
+        void Delete(CurrencyForDate currency);
+
+        CurrencyForDate SelectByDate(DateTime date);
     }
 }

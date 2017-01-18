@@ -50,9 +50,9 @@
   <ItemGroup>
     <Compile Include="Context\SPContext.cs" />
     <Compile Include="DataModels\Models.cs" />
-    <Compile Include="Migrations\201701171944428_InitialCreate.cs" />
-    <Compile Include="Migrations\201701171944428_InitialCreate.Designer.cs">
-      <DependentUpon>201701171944428_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201701181126293_create.cs" />
+    <Compile Include="Migrations\201701181126293_create.Designer.cs">
+      <DependentUpon>201701181126293_create.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,12 +64,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701171944428_InitialCreate.resx">
-      <DependentUpon>201701171944428_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
+    <Folder Include="SQL\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="SQL\" />
+    <EmbeddedResource Include="Migrations\201701181126293_create.resx">
+      <DependentUpon>201701181126293_create.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

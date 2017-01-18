@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrencyForDateRepo.cs" />
     <Compile Include="CurrencyRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -53,9 +54,9 @@
       <Project>{bc3d1b46-d00d-44ec-abbd-9fc3e3b79ac5}</Project>
       <Name>DatabaseLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entities\DTL.csproj">
-      <Project>{866c5db2-ad7b-46ea-9985-3bb98aec8f86}</Project>
-      <Name>DTL</Name>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{26ee036d-e554-4097-83ad-e32bb1a7294a}</Project>
+      <Name>Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{8e4bef5c-fb83-4a3a-b269-c88257b27626}</Project>

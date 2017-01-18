@@ -1,4 +1,5 @@
-﻿using Interfaces;
+﻿using Entities;
+using Interfaces;
 using Repositories;
 using System;
 using System.Collections.Generic;
@@ -14,8 +15,10 @@ namespace ConsoleTest
         {
             ICurrencyRepo CurrencyRepo = new CurrencyRepo();
 
-            CurrencyRepo.Add(new Entities.Currency() { FullName = "Dolar", ShortName = "USD" });
-            CurrencyRepo.Add(new Entities.Currency() { FullName = "Grivna", ShortName = "UAH" });
+            //CurrencyRepo.Add(new Currency() { FullName = "Dolar", ShortName = "USD" });
+            //CurrencyRepo.Add(new Currency() { FullName = "Grivna", ShortName = "UAH" });
+            var v = new Currency() { FullName = "Dolar", ShortName = "USD" };
+            //CurrencyRepo.Add(v);
 
 
            //CurrencyRepo.Delete(CurrencyRepo.SelectById(5));
@@ -26,6 +29,21 @@ namespace ConsoleTest
                 Console.WriteLine(c.FullName);
                 Console.WriteLine("-----------------------------");
             }
+
+
+            ICurrencyForDateRepo CurrencyForDateRepo = new CurrencyForDateRepo();
+            CurrencyForDateRepo.Add(new CurrencyForDate() { DateTime = DateTime.UtcNow, Multiplier = 28.8, Currency = v });
+
+            var currFD = CurrencyForDateRepo.GetAll();
+            foreach (var c in currFD)
+            {
+                Console.WriteLine(c.DateTime);
+                Console.WriteLine(c.Multiplier);
+                Console.WriteLine(c.Currency.ID + " " + c.Currency.ShortName + " " + c.Currency.FullName );
+                Console.WriteLine("-----------------------------");
+            }
+
+            Console.ReadKey();
         }
     }
 }
