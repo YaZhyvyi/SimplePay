@@ -32,11 +32,11 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\..\..\ThirdParty\EntityFramework\EntityFramework.6.1.3\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\..\..\ThirdParty\EntityFramework\EntityFramework.6.1.3\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -50,13 +50,9 @@
   <ItemGroup>
     <Compile Include="Context\SPContext.cs" />
     <Compile Include="DataModels\Models.cs" />
-    <Compile Include="Migrations\201701181741314_ChangeTransaction.cs" />
-    <Compile Include="Migrations\201701181741314_ChangeTransaction.Designer.cs">
-      <DependentUpon>201701181741314_ChangeTransaction.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201701181756041_ChangeTransaction1.cs" />
-    <Compile Include="Migrations\201701181756041_ChangeTransaction1.Designer.cs">
-      <DependentUpon>201701181756041_ChangeTransaction1.cs</DependentUpon>
+    <Compile Include="Migrations\201701191842575_InitialCreate.cs" />
+    <Compile Include="Migrations\201701191842575_InitialCreate.Designer.cs">
+      <DependentUpon>201701191842575_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,16 +63,14 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="SQL\" />
+    <EmbeddedResource Include="Migrations\201701191842575_InitialCreate.resx">
+      <DependentUpon>201701191842575_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701181741314_ChangeTransaction.resx">
-      <DependentUpon>201701181741314_ChangeTransaction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701181756041_ChangeTransaction1.resx">
-      <DependentUpon>201701181756041_ChangeTransaction1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="SQL\InitialCreate.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
