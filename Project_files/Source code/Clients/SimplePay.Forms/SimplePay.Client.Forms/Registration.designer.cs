@@ -28,321 +28,322 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.lblName = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.Login = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.title = new System.Windows.Forms.Label();
-			this.btnEnter = new System.Windows.Forms.Button();
-			this.btnCancel = new System.Windows.Forms.Button();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// lblName
-			// 
-			this.lblName.AutoSize = true;
-			this.lblName.Font = new System.Drawing.Font("Arial", 12F);
-			this.lblName.Location = new System.Drawing.Point(12, 206);
-			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(54, 18);
-			this.lblName.TabIndex = 0;
-			this.lblName.Text = "Name:";
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Arial", 12F);
-			this.label1.Location = new System.Drawing.Point(12, 110);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(51, 18);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Login:";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Arial", 12F);
-			this.label2.Location = new System.Drawing.Point(12, 158);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(82, 18);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Password:";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Arial", 12F);
-			this.label3.Location = new System.Drawing.Point(12, 254);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(75, 18);
-			this.label3.TabIndex = 3;
-			this.label3.Text = "Surname:";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Arial", 12F);
-			this.label4.Location = new System.Drawing.Point(12, 302);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(52, 18);
-			this.label4.TabIndex = 4;
-			this.label4.Text = "Email:";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Arial", 12F);
-			this.label5.Location = new System.Drawing.Point(12, 350);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(57, 18);
-			this.label5.TabIndex = 5;
-			this.label5.Text = "Phone:";
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Arial", 12F);
-			this.label6.Location = new System.Drawing.Point(12, 441);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(75, 18);
-			this.label6.TabIndex = 6;
-			this.label6.Text = "Birthdate:";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font("Arial", 12F);
-			this.label7.Location = new System.Drawing.Point(12, 398);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(71, 18);
-			this.label7.TabIndex = 7;
-			this.label7.Text = "Address:";
-			// 
-			// Login
-			// 
-			this.Login.Location = new System.Drawing.Point(93, 111);
-			this.Login.Name = "Login";
-			this.Login.Size = new System.Drawing.Size(234, 20);
-			this.Login.TabIndex = 1;
-			// 
-			// textBox2
-			// 
-			this.textBox2.Location = new System.Drawing.Point(93, 159);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(234, 20);
-			this.textBox2.TabIndex = 2;
-			// 
-			// textBox3
-			// 
-			this.textBox3.Location = new System.Drawing.Point(93, 207);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(234, 20);
-			this.textBox3.TabIndex = 3;
-			// 
-			// textBox4
-			// 
-			this.textBox4.Location = new System.Drawing.Point(93, 303);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(234, 20);
-			this.textBox4.TabIndex = 5;
-			// 
-			// textBox5
-			// 
-			this.textBox5.Location = new System.Drawing.Point(93, 255);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(234, 20);
-			this.textBox5.TabIndex = 4;
-			// 
-			// textBox6
-			// 
-			this.textBox6.Location = new System.Drawing.Point(93, 351);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(234, 20);
-			this.textBox6.TabIndex = 6;
-			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(93, 399);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(234, 20);
-			this.textBox1.TabIndex = 7;
-			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Arial", 12F);
-			this.dateTimePicker1.Location = new System.Drawing.Point(93, 441);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(234, 20);
-			this.dateTimePicker1.TabIndex = 8;
-			// 
-			// title
-			// 
-			this.title.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.title.Location = new System.Drawing.Point(69, 9);
-			this.title.Name = "title";
-			this.title.Size = new System.Drawing.Size(188, 56);
-			this.title.TabIndex = 11;
-			this.title.Text = "Sign up";
-			// 
-			// btnEnter
-			// 
-			this.btnEnter.BackColor = System.Drawing.Color.White;
-			this.btnEnter.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.btnEnter.Location = new System.Drawing.Point(252, 480);
-			this.btnEnter.Name = "btnEnter";
-			this.btnEnter.Size = new System.Drawing.Size(75, 26);
-			this.btnEnter.TabIndex = 10;
-			this.btnEnter.Text = "Enter";
-			this.btnEnter.UseVisualStyleBackColor = false;
-			// 
-			// btnCancel
-			// 
-			this.btnCancel.BackColor = System.Drawing.Color.White;
-			this.btnCancel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.btnCancel.Location = new System.Drawing.Point(12, 480);
-			this.btnCancel.Name = "btnCancel";
-			this.btnCancel.Size = new System.Drawing.Size(75, 26);
-			this.btnCancel.TabIndex = 12;
-			this.btnCancel.Text = "Cancel";
-			this.btnCancel.UseVisualStyleBackColor = false;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Arial", 10F);
-			this.label8.ForeColor = System.Drawing.Color.Red;
-			this.label8.Location = new System.Drawing.Point(96, 188);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(225, 16);
-			this.label8.TabIndex = 13;
-			this.label8.Text = "Maximum number of characters 40";
-			this.label8.Visible = false;
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Font = new System.Drawing.Font("Arial", 10F);
-			this.label9.ForeColor = System.Drawing.Color.Red;
-			this.label9.Location = new System.Drawing.Point(96, 236);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(225, 16);
-			this.label9.TabIndex = 14;
-			this.label9.Text = "Maximum number of characters 40";
-			this.label9.Visible = false;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Arial", 10F);
-			this.label10.ForeColor = System.Drawing.Color.Red;
-			this.label10.Location = new System.Drawing.Point(96, 92);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(225, 16);
-			this.label10.TabIndex = 15;
-			this.label10.Text = "Maximum number of characters 14";
-			this.label10.Visible = false;
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Font = new System.Drawing.Font("Arial", 10F);
-			this.label11.ForeColor = System.Drawing.Color.Red;
-			this.label11.Location = new System.Drawing.Point(96, 284);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(225, 16);
-			this.label11.TabIndex = 16;
-			this.label11.Text = "Maximum number of characters 17";
-			this.label11.Visible = false;
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Arial", 10F);
-			this.label12.ForeColor = System.Drawing.Color.Red;
-			this.label12.Location = new System.Drawing.Point(96, 332);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(225, 16);
-			this.label12.TabIndex = 17;
-			this.label12.Text = "Maximum number of characters 50";
-			this.label12.Visible = false;
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Arial", 10F);
-			this.label13.ForeColor = System.Drawing.Color.Red;
-			this.label13.Location = new System.Drawing.Point(96, 140);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(225, 16);
-			this.label13.TabIndex = 18;
-			this.label13.Text = "Maximum number of characters 50";
-			this.label13.Visible = false;
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Font = new System.Drawing.Font("Arial", 10F);
-			this.label14.ForeColor = System.Drawing.Color.Red;
-			this.label14.Location = new System.Drawing.Point(96, 380);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(225, 16);
-			this.label14.TabIndex = 19;
-			this.label14.Text = "Maximum number of characters 50";
-			this.label14.Visible = false;
-			// 
-			// Registration
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(338, 518);
-			this.Controls.Add(this.label14);
-			this.Controls.Add(this.label13);
-			this.Controls.Add(this.label12);
-			this.Controls.Add(this.label11);
-			this.Controls.Add(this.label10);
-			this.Controls.Add(this.label9);
-			this.Controls.Add(this.label8);
-			this.Controls.Add(this.btnCancel);
-			this.Controls.Add(this.btnEnter);
-			this.Controls.Add(this.title);
-			this.Controls.Add(this.dateTimePicker1);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.textBox6);
-			this.Controls.Add(this.textBox5);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.Login);
-			this.Controls.Add(this.label7);
-			this.Controls.Add(this.label6);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.lblName);
-			this.Name = "Registration";
-			this.Text = "SimplePay: @Registration";
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.lblName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.dateTimeBirthdate = new System.Windows.Forms.DateTimePicker();
+            this.title = new System.Windows.Forms.Label();
+            this.btnEnter = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.vldName = new System.Windows.Forms.Label();
+            this.vldSurname = new System.Windows.Forms.Label();
+            this.vldLogin = new System.Windows.Forms.Label();
+            this.vldEmail = new System.Windows.Forms.Label();
+            this.vldPhone = new System.Windows.Forms.Label();
+            this.vldPassword = new System.Windows.Forms.Label();
+            this.vldAddress = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Arial", 12F);
+            this.lblName.Location = new System.Drawing.Point(12, 206);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(54, 18);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F);
+            this.label1.Location = new System.Drawing.Point(12, 110);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Login:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F);
+            this.label2.Location = new System.Drawing.Point(12, 158);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 18);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Password:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F);
+            this.label3.Location = new System.Drawing.Point(12, 254);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Surname:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 12F);
+            this.label4.Location = new System.Drawing.Point(12, 302);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 18);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Email:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F);
+            this.label5.Location = new System.Drawing.Point(12, 350);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 18);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Phone:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F);
+            this.label6.Location = new System.Drawing.Point(12, 441);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 18);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Birthdate:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 12F);
+            this.label7.Location = new System.Drawing.Point(12, 398);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 18);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Address:";
+            // 
+            // txtLogin
+            // 
+            this.txtLogin.Location = new System.Drawing.Point(93, 111);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(234, 20);
+            this.txtLogin.TabIndex = 1;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(93, 159);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(234, 20);
+            this.txtPassword.TabIndex = 2;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(93, 207);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(234, 20);
+            this.txtName.TabIndex = 3;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(93, 303);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(234, 20);
+            this.txtEmail.TabIndex = 5;
+            // 
+            // txtSurname
+            // 
+            this.txtSurname.Location = new System.Drawing.Point(93, 255);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(234, 20);
+            this.txtSurname.TabIndex = 4;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(93, 351);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(234, 20);
+            this.txtPhone.TabIndex = 6;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(93, 399);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(234, 20);
+            this.txtAddress.TabIndex = 7;
+            // 
+            // dateTimeBirthdate
+            // 
+            this.dateTimeBirthdate.CalendarFont = new System.Drawing.Font("Arial", 12F);
+            this.dateTimeBirthdate.Location = new System.Drawing.Point(93, 441);
+            this.dateTimeBirthdate.Name = "dateTimeBirthdate";
+            this.dateTimeBirthdate.Size = new System.Drawing.Size(234, 20);
+            this.dateTimeBirthdate.TabIndex = 8;
+            // 
+            // title
+            // 
+            this.title.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.title.Location = new System.Drawing.Point(69, 9);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(188, 56);
+            this.title.TabIndex = 11;
+            this.title.Text = "Sign up";
+            // 
+            // btnEnter
+            // 
+            this.btnEnter.BackColor = System.Drawing.Color.White;
+            this.btnEnter.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnEnter.Location = new System.Drawing.Point(252, 480);
+            this.btnEnter.Name = "btnEnter";
+            this.btnEnter.Size = new System.Drawing.Size(75, 26);
+            this.btnEnter.TabIndex = 10;
+            this.btnEnter.Text = "Enter";
+            this.btnEnter.UseVisualStyleBackColor = false;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCancel.Location = new System.Drawing.Point(12, 480);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 26);
+            this.btnCancel.TabIndex = 12;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // vldName
+            // 
+            this.vldName.AutoSize = true;
+            this.vldName.Font = new System.Drawing.Font("Arial", 10F);
+            this.vldName.ForeColor = System.Drawing.Color.Red;
+            this.vldName.Location = new System.Drawing.Point(96, 188);
+            this.vldName.Name = "vldName";
+            this.vldName.Size = new System.Drawing.Size(225, 16);
+            this.vldName.TabIndex = 13;
+            this.vldName.Text = "Maximum number of characters 40";
+            this.vldName.Visible = false;
+            // 
+            // vldSurname
+            // 
+            this.vldSurname.AutoSize = true;
+            this.vldSurname.Font = new System.Drawing.Font("Arial", 10F);
+            this.vldSurname.ForeColor = System.Drawing.Color.Red;
+            this.vldSurname.Location = new System.Drawing.Point(96, 236);
+            this.vldSurname.Name = "vldSurname";
+            this.vldSurname.Size = new System.Drawing.Size(225, 16);
+            this.vldSurname.TabIndex = 14;
+            this.vldSurname.Text = "Maximum number of characters 40";
+            this.vldSurname.Visible = false;
+            // 
+            // vldLogin
+            // 
+            this.vldLogin.AutoSize = true;
+            this.vldLogin.Font = new System.Drawing.Font("Arial", 10F);
+            this.vldLogin.ForeColor = System.Drawing.Color.Red;
+            this.vldLogin.Location = new System.Drawing.Point(96, 92);
+            this.vldLogin.Name = "vldLogin";
+            this.vldLogin.Size = new System.Drawing.Size(225, 16);
+            this.vldLogin.TabIndex = 15;
+            this.vldLogin.Text = "Maximum number of characters 14";
+            this.vldLogin.Visible = false;
+            // 
+            // vldEmail
+            // 
+            this.vldEmail.AutoSize = true;
+            this.vldEmail.Font = new System.Drawing.Font("Arial", 10F);
+            this.vldEmail.ForeColor = System.Drawing.Color.Red;
+            this.vldEmail.Location = new System.Drawing.Point(96, 284);
+            this.vldEmail.Name = "vldEmail";
+            this.vldEmail.Size = new System.Drawing.Size(225, 16);
+            this.vldEmail.TabIndex = 16;
+            this.vldEmail.Text = "Maximum number of characters 17";
+            this.vldEmail.Visible = false;
+            // 
+            // vldPhone
+            // 
+            this.vldPhone.AutoSize = true;
+            this.vldPhone.Font = new System.Drawing.Font("Arial", 10F);
+            this.vldPhone.ForeColor = System.Drawing.Color.Red;
+            this.vldPhone.Location = new System.Drawing.Point(96, 332);
+            this.vldPhone.Name = "vldPhone";
+            this.vldPhone.Size = new System.Drawing.Size(225, 16);
+            this.vldPhone.TabIndex = 17;
+            this.vldPhone.Text = "Maximum number of characters 50";
+            this.vldPhone.Visible = false;
+            // 
+            // vldPassword
+            // 
+            this.vldPassword.AutoSize = true;
+            this.vldPassword.Font = new System.Drawing.Font("Arial", 10F);
+            this.vldPassword.ForeColor = System.Drawing.Color.Red;
+            this.vldPassword.Location = new System.Drawing.Point(96, 140);
+            this.vldPassword.Name = "vldPassword";
+            this.vldPassword.Size = new System.Drawing.Size(225, 16);
+            this.vldPassword.TabIndex = 18;
+            this.vldPassword.Text = "Maximum number of characters 50";
+            this.vldPassword.Visible = false;
+            // 
+            // vldAddress
+            // 
+            this.vldAddress.AutoSize = true;
+            this.vldAddress.Font = new System.Drawing.Font("Arial", 10F);
+            this.vldAddress.ForeColor = System.Drawing.Color.Red;
+            this.vldAddress.Location = new System.Drawing.Point(96, 380);
+            this.vldAddress.Name = "vldAddress";
+            this.vldAddress.Size = new System.Drawing.Size(225, 16);
+            this.vldAddress.TabIndex = 19;
+            this.vldAddress.Text = "Maximum number of characters 50";
+            this.vldAddress.Visible = false;
+            // 
+            // Registration
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(338, 518);
+            this.Controls.Add(this.vldAddress);
+            this.Controls.Add(this.vldPassword);
+            this.Controls.Add(this.vldPhone);
+            this.Controls.Add(this.vldEmail);
+            this.Controls.Add(this.vldLogin);
+            this.Controls.Add(this.vldSurname);
+            this.Controls.Add(this.vldName);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnEnter);
+            this.Controls.Add(this.title);
+            this.Controls.Add(this.dateTimeBirthdate);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtSurname);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtLogin);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblName);
+            this.Name = "Registration";
+            this.Text = "SimplePay: @Registration";
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -356,23 +357,23 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox Login;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.DateTimePicker dateTimeBirthdate;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label vldName;
+        private System.Windows.Forms.Label vldSurname;
+        private System.Windows.Forms.Label vldLogin;
+        private System.Windows.Forms.Label vldEmail;
+        private System.Windows.Forms.Label vldPhone;
+        private System.Windows.Forms.Label vldPassword;
+		private System.Windows.Forms.Label vldAddress;
 	}
 }
