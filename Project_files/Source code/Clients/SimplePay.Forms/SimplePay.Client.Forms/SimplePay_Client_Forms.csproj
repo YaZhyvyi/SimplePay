@@ -59,11 +59,11 @@
     <Compile Include="Main_User.Designer.cs">
       <DependentUpon>Main_User.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pincode.cs">
+    <Compile Include="PinCode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pincode.Designer.cs">
-      <DependentUpon>Pincode.cs</DependentUpon>
+    <Compile Include="PinCode.Designer.cs">
+      <DependentUpon>PinCode.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\About.cs">
       <SubType>UserControl</SubType>
@@ -127,8 +127,8 @@
     <EmbeddedResource Include="Main_User.resx">
       <DependentUpon>Main_User.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pincode.resx">
-      <DependentUpon>Pincode.cs</DependentUpon>
+    <EmbeddedResource Include="PinCode.resx">
+      <DependentUpon>PinCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\About.resx">
       <DependentUpon>About.cs</DependentUpon>

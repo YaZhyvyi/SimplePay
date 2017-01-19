@@ -35,13 +35,13 @@
 			this.AddLB = new System.Windows.Forms.Label();
 			this.WithdrawLB = new System.Windows.Forms.Label();
 			this.AboutLB = new System.Windows.Forms.Label();
-			this.withdrawZniatia1 = new SimplePay_Client_Forms.WithdrawZniatia();
-			this.about1 = new SimplePay_Client_Forms.About();
-			this.payment1 = new SimplePay_Client_Forms.Payment();
-			this.tabAccounts1 = new SimplePay_Client_Forms.TabAccounts();
-			this.transfer1 = new SimplePay_Client_Forms.Transfer();
-			this.paymentHistory1 = new SimplePay_Client_Forms.PaymentHistory();
-			this.profile_UserControl1 = new SimplePay_Client_Forms.Profile_UserControl();
+			this.withdrawZniatia1 = new WithdrawZniatia();
+			this.about1 = new About();
+			this.payment1 = new Payment();
+			this.tabAccounts1 = new TabAccounts();
+			this.transfer1 = new Transfer();
+			this.paymentHistory1 = new PaymentHistory();
+			this.profile_UserControl1 = new Profile_UserControl();
 			this.SuspendLayout();
 			// 
 			// ProfileLB
@@ -217,7 +217,6 @@
 			this.Name = "Main_User";
 			this.Text = "SimplePay: @User";
 			this.ResumeLayout(false);
-
 		}
 
 		#endregion
