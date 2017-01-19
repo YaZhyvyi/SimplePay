@@ -29,6 +29,7 @@ namespace SimplePay_Client_Forms
 
         private void CreateDataArray()
         {
+
             var dataRegistration = new Dictionary<string, object>();
         }
 
