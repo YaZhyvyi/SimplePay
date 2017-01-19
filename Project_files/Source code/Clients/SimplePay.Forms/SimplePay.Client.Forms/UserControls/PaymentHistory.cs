@@ -109,33 +109,13 @@ namespace SimplePay_Client_Forms
             {
                 Button btnPage = new Button();
                 
-                //if (page.Text == "<<")
-                //{
-                //    btnPage.Location = new System.Drawing.Point(58 * count, 5);
-                //}
-                //else if (page.Text == "1")
-                //{
-                //    btnPage.Location = new System.Drawing.Point(48 * count, 5);
-                //}
-                //else
-                //{
-                    btnPage.Location = new System.Drawing.Point(38 * count, 5);
-                //}
-
-                if (page.Text == "First" || page.Text == "Last")
-                {
-                    btnPage.Size = new System.Drawing.Size(55, 26);
-                }
-                else
-                {
-                    btnPage.Size = new System.Drawing.Size(35, 26);
-                }
+                btnPage.Location = new System.Drawing.Point(38 * count, 5);
+                btnPage.Size = new System.Drawing.Size(35, 26);
 
                 btnPage.Name = page.Value;
                 btnPage.Text = page.Text;
                 btnPage.Enabled = !page.Selected;
                 btnPage.BackColor = Color.White;
-                //btnPage.Font = new Font("Arial", 12);
                 btnPage.Click += new System.EventHandler(this.Page_Click);
 
                 if (currentPage <= 1 && (page.Text == "First" || page.Text == "<<"))
@@ -169,6 +149,11 @@ namespace SimplePay_Client_Forms
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.BindGrid(1);
         }
     }
 }
